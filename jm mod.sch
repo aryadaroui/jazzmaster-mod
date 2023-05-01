@@ -1,0 +1,237 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Device:C Ctreb1
+U 1 1 60890192
+P 2350 1500
+F 0 "Ctreb1" V 2098 1500 50  0000 C CNN
+F 1 "22nF" V 2189 1500 50  0000 C CNN
+F 2 "" H 2388 1350 50  0001 C CNN
+F 3 "~" H 2350 1500 50  0001 C CNN
+	1    2350 1500
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C Cbass
+U 1 1 60895674
+P 2700 2350
+F 0 "Cbass" H 2815 2396 50  0000 L CNN
+F 1 "2.2nF" H 2815 2305 50  0000 L CNN
+F 2 "" H 2738 2200 50  0001 C CNN
+F 3 "~" H 2700 2350 50  0001 C CNN
+	1    2700 2350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R Rbass
+U 1 1 60896947
+P 2400 2350
+F 0 "Rbass" H 2470 2396 50  0000 L CNN
+F 1 "1Meg" H 2470 2305 50  0000 L CNN
+F 2 "" V 2330 2350 50  0001 C CNN
+F 3 "~" H 2400 2350 50  0001 C CNN
+	1    2400 2350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2000 1700 2000 1500
+Wire Wire Line
+	2000 1500 2200 1500
+Wire Wire Line
+	2500 1500 2500 1700
+Wire Wire Line
+	2700 2200 2700 2100
+Wire Wire Line
+	2700 2100 2400 2100
+Wire Wire Line
+	2400 2100 2400 2200
+Wire Wire Line
+	2400 2500 2700 2500
+Connection ~ 2700 2100
+Wire Wire Line
+	2700 2100 3000 2100
+$Comp
+L Device:R Rbleed
+U 1 1 6089CD80
+P 3200 2100
+F 0 "Rbleed" V 3407 2100 50  0000 C CNN
+F 1 "100k" V 3316 2100 50  0000 C CNN
+F 2 "" V 3130 2100 50  0001 C CNN
+F 3 "~" H 3200 2100 50  0001 C CNN
+	1    3200 2100
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R Rvol
+U 1 1 6089B29D
+P 3000 1700
+F 0 "Rvol" H 3070 1746 50  0000 L CNN
+F 1 "1Meg" H 3070 1655 50  0000 L CNN
+F 2 "" V 2930 1700 50  0001 C CNN
+F 3 "~" H 3000 1700 50  0001 C CNN
+	1    3000 1700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3000 1850 3000 1900
+Wire Wire Line
+	3050 2100 3000 2100
+Connection ~ 3000 2100
+Wire Wire Line
+	3500 1400 3500 1600
+Wire Wire Line
+	3500 1400 3000 1400
+Wire Wire Line
+	3000 1400 3000 1550
+Connection ~ 2000 2000
+Wire Wire Line
+	2000 2500 2400 2500
+Wire Wire Line
+	2000 2000 2000 2500
+Connection ~ 2400 2500
+$Comp
+L Device:R Rtreb2
+U 1 1 608A3CAE
+P 3150 2700
+F 0 "Rtreb2" H 3220 2746 50  0000 L CNN
+F 1 "1Meg" H 3220 2655 50  0000 L CNN
+F 2 "" V 3080 2700 50  0001 C CNN
+F 3 "~" H 3150 2700 50  0001 C CNN
+	1    3150 2700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3150 2550 3150 2350
+Wire Wire Line
+	3150 2350 3350 2350
+Wire Wire Line
+	3150 2850 3000 2850
+Wire Wire Line
+	3000 2850 3000 2100
+$Comp
+L Device:C Cbleed
+U 1 1 6089D71B
+P 3500 2100
+F 0 "Cbleed" V 3248 2100 50  0000 C CNN
+F 1 "1nF" V 3339 2100 50  0000 C CNN
+F 2 "" H 3538 1950 50  0001 C CNN
+F 3 "~" H 3500 2100 50  0001 C CNN
+	1    3500 2100
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4000 2100 3750 2100
+Wire Wire Line
+	3750 2100 3750 1900
+Wire Wire Line
+	3750 1900 3000 1900
+Connection ~ 3750 2100
+Wire Wire Line
+	3750 2100 3650 2100
+Connection ~ 3000 1900
+Wire Wire Line
+	3000 1900 3000 2100
+$Comp
+L Device:R Rtreb1
+U 1 1 6088FA73
+P 2000 1850
+F 0 "Rtreb1" H 2070 1896 50  0000 L CNN
+F 1 "1Meg" H 2070 1805 50  0000 L CNN
+F 2 "" V 1930 1850 50  0001 C CNN
+F 3 "~" H 2000 1850 50  0001 C CNN
+	1    2000 1850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3650 2350 3650 2550
+$Comp
+L Device:C Ctreb2
+U 1 1 608A3CB4
+P 3500 2350
+F 0 "Ctreb2" V 3248 2350 50  0000 C CNN
+F 1 "47nF" V 3339 2350 50  0000 C TNN
+F 2 "" H 3538 2200 50  0001 C CNN
+F 3 "~" H 3500 2350 50  0001 C CNN
+	1    3500 2350
+	0    1    1    0   
+$EndComp
+Text GLabel 1500 2000 0    50   Input ~ 0
+in
+Text GLabel 4000 2100 2    50   Input ~ 0
+out
+Wire Wire Line
+	1650 2000 2000 2000
+Connection ~ 1650 2000
+Wire Wire Line
+	1500 2000 1650 2000
+$Comp
+L pspice:VSOURCE V
+U 1 1 60893205
+P 1650 2300
+F 0 "V" H 1878 2346 50  0000 L CNN
+F 1 "dc 0 ac 1" H 1878 2255 50  0000 L CNN
+F 2 "" H 1650 2300 50  0001 C CNN
+F 3 "~" H 1650 2300 50  0001 C CNN
+	1    1650 2300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 60894AF1
+P 2500 1700
+F 0 "#PWR?" H 2500 1450 50  0001 C CNN
+F 1 "GND" H 2505 1527 50  0000 C CNN
+F 2 "" H 2500 1700 50  0001 C CNN
+F 3 "" H 2500 1700 50  0001 C CNN
+	1    2500 1700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 60894D79
+P 3500 1600
+F 0 "#PWR?" H 3500 1350 50  0001 C CNN
+F 1 "GND" H 3505 1427 50  0000 C CNN
+F 2 "" H 3500 1600 50  0001 C CNN
+F 3 "" H 3500 1600 50  0001 C CNN
+	1    3500 1600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 60895114
+P 3650 2550
+F 0 "#PWR?" H 3650 2300 50  0001 C CNN
+F 1 "GND" H 3655 2377 50  0000 C CNN
+F 2 "" H 3650 2550 50  0001 C CNN
+F 3 "" H 3650 2550 50  0001 C CNN
+	1    3650 2550
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 608952BE
+P 1650 2600
+F 0 "#PWR?" H 1650 2350 50  0001 C CNN
+F 1 "GND" H 1655 2427 50  0000 C CNN
+F 2 "" H 1650 2600 50  0001 C CNN
+F 3 "" H 1650 2600 50  0001 C CNN
+	1    1650 2600
+	1    0    0    -1  
+$EndComp
+Text Notes 1000 3000 0    50   ~ 0
+.ac dec 10 1 20k\n
+$EndSCHEMATC
